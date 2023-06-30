@@ -1,0 +1,222 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /* Whatever width you want */
+}
+.form-group {
+  margin: 20px 0;
+}
+.form-group label {
+  display: block;
+  margin-left: 20px;
+  text-align: left;
+}
+.form-group button {
+  height: 40px;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="password"]{
+  color: black;
+  padding: 10px;
+  width: 80%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  height: 10px;
+}
+.form-group select {
+  width: 83%;
+  height: 32px;
+  margin: 15px 0;
+  padding: 5px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+}
+#login-form {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.form-group.radio{
+  display:inline-flex;
+}
+
+.login-component {
+  background: #efefef;
+  padding: 50px;
+  border-radius: 5px;
+}
+.home-header a.logout{
+  text-align: right;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+.home-content .page-content h2{
+  margin-top: 70px;
+}
+ul.transaction-list{
+  text-align: left;
+  max-width: 410px;
+  margin: 50px auto;
+}
+ul.transaction-list li{
+  margin: 10px 0;
+}
+ul.transaction-list li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+nav {
+  background: #efefef;
+  box-shadow: 1px 2px 3px #dbdbdbfa;
+}
+.home-header ul{
+  list-style: none;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.home-header ul li{
+  margin: 30px;
+  display: inline-flex;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-header ul li:not(:first-child){
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+img.nav-logo{
+  width: 80px;
+  height: 50px;
+}
+
+/* Tab Container */
+.Tabs {
+  width: 80%;
+  height: auto;
+  min-height: 400px;
+  background: #053742;
+  margin: 3.5rem auto 1.5rem;
+  padding: 2rem 1rem;
+  color: #E8F0F2;
+  border-radius: 2rem;
+  @media (max-width: 769px) {
+   padding: 2rem 0;
+  }
+ }
+
+ /* Tab Navigation */
+ul.nav {
+  width: 60%;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #39A2DB;
+  border-radius: 2rem;
+  padding-left: 0px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+ul.nav li {
+  width: 50%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+ul.nav li:nth-child(2) {
+  border-radius: 0;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+ul.nav li:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+ul.nav li.active {
+  background: #39A2DB;
+}
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+.newtransactionform {
+  max-width: 600px;
+  margin: auto;
+}
+.newtransactionform .form-group label:not(.form-group.radio label){
+  margin-left: 50px;
+}
